@@ -1,0 +1,38 @@
+.wrapper-answer {
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+  margin-bottom: 40px;
+}
+
+.key-answer {
+  width: 20px;
+  text-align: center;
+  // border-bottom: 2px solid #1d1c1c;
+  // font-size: 0;
+
+  // &.open {
+  //   font-size: 30px;
+  //   border-color: transparent;
+  // }
+}
+
+.question {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.not-correct {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+
+  &__counter {
+    color: red;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+}

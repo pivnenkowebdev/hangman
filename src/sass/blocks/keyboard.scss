@@ -1,0 +1,37 @@
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+
+  @media (max-width: 425px) {
+    gap: 3px;
+  }
+    
+  &__btn {
+    padding: 10px 15px;
+    border: 2px solid rgb(43, 41, 41);
+    border-radius: 10px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+    
+    @media (max-width: 550px) {
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 5px;
+    }
+
+    @media (hover:hover) {
+      &:hover {
+        background-color: #797777;
+      }
+    }
+
+    &.disabled {
+      background-color: #111010;
+      border-color: #757373;
+      color: #fff;
+      opacity: 0.8;
+    }
+  }
+}
